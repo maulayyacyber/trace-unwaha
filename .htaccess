@@ -1,0 +1,44 @@
+
+RewriteEngine on
+
+RewriteRule ^home$ index.php?ref=home [L]
+RewriteRule ^step-2A$ index.php?ref=step-2-a [L]
+RewriteRule ^step-2B$ index.php?ref=step-2-b [L]
+RewriteRule ^umpan-balik$ index.php?ref=umpan-balik [L]
+
+#Module Fakultas Agama Islam
+RewriteRule ^fakultas-agama-islam/pendidikan-agama-islam$ index.php?ref=pendidikan-agama-islam [L]
+RewriteRule ^fakultas-agama-islam/pendidikan-bahasa-arab$ index.php?ref=pendidikan-bahasa-arab [L]
+RewriteRule ^fakultas-agama-islam/ekonomi-syariah$ index.php?ref=ekonomi-syariah [L]
+
+#Module Fakultas Teknologi Informasi
+RewriteRule ^fakultas-teknologi-informasi/sistem-informasi$ index.php?ref=sistem-informasi [L]
+RewriteRule ^fakultas-teknologi-informasi/teknik-informatika$ index.php?ref=teknik-informatika [L]
+
+#Module Fakultas Pertanian
+RewriteRule ^fakultas-pertanian/agribisnis$ index.php?ref=agribisnis [L]
+RewriteRule ^fakultas-pertanian/agroekoteknologi$ index.php?ref=agroekoteknologi [L]
+RewriteRule ^fakultas-pertanian/teknik-pertanian$ index.php?ref=teknik-pertanian [L]
+
+#module Fakultas Ilmu Pendidikan
+RewriteRule ^fakultas-ilmu-pendidikan/pendidikan-biologi$ index.php?ref=pendidikan-biologi [L]
+RewriteRule ^fakultas-ilmu-pendidikan/pendidikan-fisika$ index.php?ref=pendidikan-fisika [L]
+RewriteRule ^fakultas-ilmu-pendidikan/pendidikan-matematika$ index.php?ref=pendidikan-matematika [L]
+RewriteRule ^fakultas-ilmu-pendidikan/pendidikan-bahasa-inggris$ index.php?ref=pendidikan-bahasa-inggris [L]
+
+#Module Fakultas Ekonomi
+RewriteRule ^fakultas-ekonomi/manajemen$ index.php?ref=manajemen [L]
+
+RewriteRule ^admin 	- [L]
+RewriteRule ^css 	- [L]
+RewriteRule ^js 	- [L]
+RewriteRule ^fonts 	- [L]
+RewriteRule ^library- [L]
+RewriteRule ^images - [L]
+RewriteRule ^module - [L]  
+
+<IfModule mod_rewrite.c> 
+
+RewriteEngine On
+
+</IfModule>
