@@ -55,9 +55,6 @@ include ('part/navbar.php');
         }elseif($_GET['ref'] == "data-trace") {
             require "module/data.php";
 
-        }elseif($_GET['ref'] == "cetak-data"){
-            require "module/cetak-data.php";
-
         }elseif($_GET['ref'] == "hapus-data"){
             require "module/hapus-data.php";
 
