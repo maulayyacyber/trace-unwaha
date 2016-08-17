@@ -13,13 +13,13 @@
                                             <input type="hidden" name="id_user" value="<?php echo $_SESSION['id_user']; ?>">
                                             <div class="form-group">
                                                 <label>Username</label>
-                                                <input type="text" name= "username" class="form-control" placeholder="Username" value="<?php echo $_SESSION['username']; ?>">
+                                                <input type="text" name= "username" class="form-control" placeholder="Username" value="<?php echo $_SESSION['username']; ?>" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" name = "email" class="form-control" placeholder="Email" value="<?php echo $_SESSION['email']; ?>">
+                                                <input type="email" name = "email" class="form-control" placeholder="Email" value="<?php echo $_SESSION['email']; ?>" required>
                                             </div>
                                         </div>
                                     </div>
@@ -28,7 +28,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Nama</label>
-                                                <input type="text" name="nama" class="form-control" placeholder="Company" value="<?php echo $_SESSION['nama']; ?>">
+                                                <input type="text" name="nama" class="form-control" placeholder="Company" value="<?php echo $_SESSION['nama']; ?>" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
