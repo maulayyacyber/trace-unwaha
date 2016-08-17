@@ -14,9 +14,68 @@ if(empty($_SESSION['username'])){
 		$s = mysqli_query($connect, "SELECT * FROM tbl_trace WHERE id_register = '$id'");
 		
 		$row = mysqli_fetch_array($s);
-		
+			//declare prodi kdoe
+			if($row['prodi'] == '0205'){
+			    $prodi = 'Sistem Informasi';
+
+			}elseif($row['prodi'] == '0204'){
+			    $prodi = 'Teknik Informatika';
+
+			}elseif($row['prodi'] == '0306'){
+			    $prodi = 'Agribisnis';
+
+			}elseif($row['prodi'] == '0307'){
+			    $prodi = 'Agroekoteknologi';
+
+			}elseif($row['prodi'] == '0309'){
+			    $prodi = 'Teknik Pertanian';
+
+			}elseif($row['prodi'] == '0308'){
+			    $prodi = 'Teknologi Hasil Pertanian';
+
+			}elseif($row['prodi'] == '0101'){
+			    $prodi = 'Pendidikan Agama Islam';
+
+			}elseif($row['prodi'] == '0102'){
+			    $prodi = 'Pendidikan Bahasa Arab';
+
+			}elseif($row['prodi'] == '0103'){
+			    $prodi = 'Ekonomi Syariah';
+
+			}elseif($row['prodi'] == '0410'){
+			    $prodi = 'Pendidikan Biologi';
+
+			}elseif($row['prodi'] == '0411'){
+			    $prodi = 'Pendidikan Fisika';
+
+			}elseif($row['prodi'] == '0412'){
+			    $prodi = 'Pendidikan Matematika';
+
+			}elseif($row['prodi'] == '0413'){
+			    $prodi = 'Pendidikan Bahasa Inggris';
+
+			}elseif($row['prodi'] == '0514'){
+			    $prodi = 'Manajemen';
+			}else{
+			    $prodi = 'Prodi Not Found';
+		}		
 		$strhtml .= '<div class="container">
-						<h3>Bagian Pertama</h3>
+					  <table class="table">
+					    <thead>
+					      <tr>
+					        <th style="padding-left:230">TRACER STUDY LULUSAN</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <th style="padding-left:230">FAKULTAS TEKNOLOGI INFORMASI</th>
+					      </tr>
+					      <tr>
+					        <th style="padding-left:230">UNWAHA JOMBANG</th>
+					      </tr>
+					    </tbody>
+					  </table>							
+						<h4>Bagian Pertama</h4>
 						<table class="table">
 						  <tbody>
 						    <tr>
@@ -24,6 +83,11 @@ if(empty($_SESSION['username'])){
 						      <td>NIM  </td>
 						      <td>: '.$row['nim'].'</td>
 						    </tr>
+						    <tr>
+						      <th scope="row"></th>
+						      <td>prodi  </td>
+						      <td>: '.$prodi.'</td>
+						    </tr>						    
 						    <tr>
 						      <th scope="row"></th>
 						      <td>Nama  </td>
@@ -52,7 +116,7 @@ if(empty($_SESSION['username'])){
 						  </tbody>
 						</table>
 						<br>
-						<h3>Bagian A</h3>
+						<h4>Bagian A</h4>
 						<table class="table">
 							<tbody>
 						    <tr>
@@ -128,7 +192,7 @@ if(empty($_SESSION['username'])){
 							</tbody>
 						</table>
 						<br>
-						<h3>Bagian B</h3>
+						<h4>Bagian B</h4>
 						<table class="table">
 							<tbody>
 						    <tr>
@@ -184,7 +248,7 @@ if(empty($_SESSION['username'])){
 						    </tbody>
 						</table>
 						<br>
-						<h3>Bagian Umpan Balik</h3>
+						<h4>Bagian Umpan Balik</h4>
 						<table class="table">
 							<tbody>
 						    <tr>
