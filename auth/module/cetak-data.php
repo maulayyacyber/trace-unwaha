@@ -81,37 +81,37 @@ if(empty($_SESSION['username'])){
 						    <tr>
 						      <th scope="row"></th>
 						      <td>NIM  </td>
-						      <td>: '.$row['nim'].'</td>
+						      <td>: <b>'.$row['nim'].'</b></td>
 						    </tr>
 						    <tr>
 						      <th scope="row"></th>
 						      <td>prodi  </td>
-						      <td>: '.$prodi.'</td>
+						      <td>: <b>'.$prodi.'</b></td>
 						    </tr>						    
 						    <tr>
 						      <th scope="row"></th>
 						      <td>Nama  </td>
-						      <td>: '.$row['nama'].'</td>
+						      <td>: <b>'.$row['nama'].'</b></td>
 						    </tr>
 						    <tr>
 						      <th scope="row"></th>
 						      <td>Tahun Lulus  </td>
-						      <td>: '.$row['tahun_lulus'].'</td>
+						      <td>: <b>'.$row['tahun_lulus'].'</b></td>
 						    </tr>
 						    <tr>
 						      <th scope="row"></th>
 						      <td>Alamat Rumah  </td>
-						      <td>: '.$row['alamat'].'</td>
+						      <td>: <b>'.$row['alamat'].'</b></td>
 						    </tr>
 						    <tr>
 						      <th scope="row"></th>
 						      <td>Alamat Email  </td>
-						      <td>: '.$row['email'].'</td>
+						      <td>: <b>'.$row['email'].'</b></td>
 						    </tr>						    
 						    <tr>
 						      <th scope="row"></th>
 						      <td>Nomor HP  </td>
-						      <td>: '.$row['no_hp'].'</td>
+						      <td>: <b>'.$row['no_hp'].'</b></td>
 						    </tr>
 						  </tbody>
 						</table>
