@@ -81,7 +81,7 @@
 			                        <td><?php echo  $prodi; ?></td>
 			                        <td><?php echo  $row['tahun_lulus']; ?></td>
 			                        <td>
-			                            <a style="color:#158873" href="module/cetak-data.php?id=<?php echo  $row['id_register']; ?>"><i class="pe-7s-print" style="color:#000000"></i> Cetak</a> | 
+			                            <a style="color:#158873" href="module/cetak-data.php?id=<?php echo  $row['id_register']; ?>" target="_BLANK"><i class="pe-7s-print" style="color:#000000"></i> Cetak</a> | 
 			                            <a style="color:#158873" href=media.php?ref=hapus-data&id=<?php echo  $row['id_register']; ?>><i class="pe-7s-trash" style="color:#ff0000"></i> Hapus</a>
 			                        </td>
 			                    </tr>

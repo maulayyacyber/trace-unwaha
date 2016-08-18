@@ -115,7 +115,7 @@ if(empty($_SESSION['username'])){
 						    </tr>
 						  </tbody>
 						</table>
-						<br>
+
 						<h4>Bagian A</h4>
 						<table class="table">
 							<tbody>
@@ -191,7 +191,7 @@ if(empty($_SESSION['username'])){
 
 							</tbody>
 						</table>
-						<br>
+
 						<h4>Bagian B</h4>
 						<table class="table">
 							<tbody>
@@ -247,7 +247,7 @@ if(empty($_SESSION['username'])){
 
 						    </tbody>
 						</table>
-						<br>
+
 						<h4>Bagian Umpan Balik</h4>
 						<table class="table">
 							<tbody>
