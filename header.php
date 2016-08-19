@@ -26,6 +26,7 @@
 	<script src="<?php print $config['base_url'] ?>js/jquery.min.js"></script>
   <script src="<?php print $config['base_url'] ?>js/jquery-ui.js"></script>
 	<script src="<?php print $config['base_url'] ?>js/bootstrap.min.js"></script>
+  <script src="<?php print $config['base_url'] ?>js/highcharts.js"></script>
 	<script src="<?php print $config['base_url'] ?>js/custom.js"></script>	 
 </head>
 

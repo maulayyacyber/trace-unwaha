@@ -29,6 +29,24 @@ RewriteRule ^fakultas-ilmu-pendidikan/pendidikan-bahasa-inggris$ index.php?ref=p
 #Module Fakultas Ekonomi
 RewriteRule ^fakultas-ekonomi/manajemen$ index.php?ref=manajemen [L]
 
+#Module Responden
+RewriteRule ^responden$ index.php?ref=responden [L]
+
+RewriteRule ^responden/pendidikan-agama-islam$ index.php?ref=responden-pendidikan-agama-islam [L]
+RewriteRule ^responden/pendidikan-bahasa-arab$ index.php?ref=responden-pendidikan-bahasa-arab [L]
+RewriteRule ^responden/ekonomi-syariah$ index.php?ref=responden-ekonomi-syariah [L]
+RewriteRule ^responden/sistem-informasi$ index.php?ref=responden-sistem-informasi [L]
+RewriteRule ^responden/teknik-informatika$ index.php?ref=responden-teknik-informatika [L]
+RewriteRule ^responden/agribisnis$ index.php?ref=responden-agribisnis [L]
+RewriteRule ^responden/agreokoteknologi$ index.php?ref=responden-agreokoteknologi [L]
+RewriteRule ^responden/teknik-pertanian$ index.php?ref=responden-teknik-pertanian [L]
+RewriteRule ^responden/pendidikan-biologi$ index.php?ref=responden-pendidikan-biologi [L]
+RewriteRule ^responden/pendidikan-fisika$ index.php?ref=responden-pendidikan-fisika [L]
+RewriteRule ^responden/pendidikan-matematika$ index.php?ref=responden-pendidikan-matematika [L]
+RewriteRule ^responden/pendidikan-bahasa-inggris$ index.php?ref=responden-pendidikan-bahasa-inggris [L]
+RewriteRule ^responden/manajemen$ index.php?ref=responden-manajemen [L]
+
+
 RewriteRule ^admin 	- [L]
 RewriteRule ^css 	- [L]
 RewriteRule ^js 	- [L]

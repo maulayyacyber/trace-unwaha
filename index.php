@@ -61,7 +61,49 @@
 
         }elseif($_GET['ref'] == "manajemen"){
             require "module/angket-1.php";
+        
+        }elseif($_GET['ref'] == "responden"){
+            require "module/responden.php";
 
+        }elseif($_GET['ref'] == "responden-pendidikan-agama-islam"){
+            require "module/responden/pai.php";
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-bahasa-arab"){
+            require "module/responden/pba.php";
+        
+        }elseif($_GET['ref'] == "responden-ekonomi-syariah"){
+            require "module/responden/es.php";
+        
+        }elseif($_GET['ref'] == "responden-sistem-informasi"){
+            require "module/responden/si.php";
+        
+        }elseif($_GET['ref'] == "responden-teknik-informatika"){
+            require "module/responden/ti.php";
+        
+        }elseif($_GET['ref'] == "responden-agribisnis"){
+            require "module/responden/agribisnis.php";
+        
+        }elseif($_GET['ref'] == "responden-agreokoteknologi"){
+            require "module/responden/agroekoteknologi.php";
+        
+        }elseif($_GET['ref'] == "responden-teknik-pertanian"){
+            require "module/responden/tp.php";
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-biologi"){
+            require "module/responden/pb.php";
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-fisika"){
+            require "module/responden/pf.php";
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-matematika"){
+            require "module/responden/pm.php";
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-bahasa-inggris"){
+            require "module/responden/pbi.php";
+        
+        }elseif($_GET['ref'] == "responden-manajemen"){
+            require "module/responden/manajemen.php";
+        
         }else{
             require "module/404.php";
         }

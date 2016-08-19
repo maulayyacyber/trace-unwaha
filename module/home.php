@@ -3,7 +3,7 @@
 			<p style="padding-top:55px;font-size:35px;color:#fff"><i class="fa fa-graduation-cap"></i> <?php print $judul ?> </p>
 			<p style="margin-left:65px;color:#fff"><i class="icon-book-open"></i> <?php print $descriptions ?></p>
 			<p style="margin-left:65px;color:#fff"><?php print $universitas ?></p>
-			<p style="margin-left:65px;color:#fff"><a class="btn btn-default" href="<?php print $config['base_url'] ?>respondent" role="button"><i class="icon-pie-chart"></i> Lihat Hasil Respondent <i class="fa fa-long-arrow-right"></i></a></p>
+			<p style="margin-left:65px;color:#fff"><a class="btn btn-default" href="<?php print $config['base_url'] ?>responden" role="button"><i class="icon-pie-chart"></i> Lihat Hasil Responden <i class="fa fa-long-arrow-right"></i></a></p>
 		</div>
 	</header>
 	<div class="container">	

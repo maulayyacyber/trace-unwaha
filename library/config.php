@@ -188,7 +188,55 @@ if($_GET['ref'] == "home"){
 		/* prodi */
 		$prodi		= $config['fakultas-ekonomi']['manajemen'];		
 
-	}else{
+	}elseif($_GET['ref'] == "responden"){
+		/* kode prodi */
+		//$hidden 	= '0514';
+		/* fakultas */
+		$title 		= 'Responden';
+		/* prodi */
+		$prodi		= 'Tracer Study UNWAHA';		
+
+	}elseif($_GET['ref'] == "responden-pendidikan-agama-islam"){
+			$title 		= 'Responden Pendidikan Agama Islam';
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-bahasa-arab"){
+        	$title 		= 'Responden Pendidikan Bahasa Arab';
+
+        }elseif($_GET['ref'] == "responden-ekonomi-syariah"){
+        	$title 		= 'Responden Ekonomi Syariah';
+        
+        }elseif($_GET['ref'] == "responden-sistem-informasi"){
+        	$title 		= 'Responden Sistem Informasi';
+        
+        }elseif($_GET['ref'] == "responden-teknik-informatika"){
+ 			$title		= 'Responden Teknik Informasi';
+        
+        }elseif($_GET['ref'] == "responden-agribisnis"){
+            $title		= 'Responden Agribisnis';
+        
+        }elseif($_GET['ref'] == "responden-agreokoteknologi"){
+            $title		= 'Responden Agroekoteknologi';
+        
+        }elseif($_GET['ref'] == "responden-teknik-pertanian"){
+            $title		= 'Responden Teknik Pertanian';
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-biologi"){
+            $title		= 'Responden Pendidikan Biologi';
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-fisika"){
+            $title		= 'Responden Pendidikan Fisika';
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-matematika"){
+            $title 		= 'Responden Pendidikan Matematika';
+        
+        }elseif($_GET['ref'] == "responden-pendidikan-bahasa-inggris"){
+            $title 		= 'Responden Pendidikan Bahsa Ingrris';
+        
+        }elseif($_GET['ref'] == "responden-manajemen"){
+            $title 		= 'Responden Manajemen';
+        
+        }else{
+		
 		header("location:home");
 }
 /* end config angket */ 

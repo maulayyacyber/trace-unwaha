@@ -74,7 +74,8 @@ if(empty($_SESSION['username'])){
 					        <th style="padding-left:230">UNWAHA JOMBANG</th>
 					      </tr>
 					    </tbody>
-					  </table>							
+					  </table>	
+					  <br>						
 						<h4>Bagian Pertama</h4>
 						<table class="table">
 						  <tbody>

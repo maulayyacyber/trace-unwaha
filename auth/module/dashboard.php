@@ -52,16 +52,14 @@
                             $jumlah = $row['jumlah'];
                             if ($prodi == '0204') {
                               $prodi1 = 'Teknik Informatika';
-
+                            }elseif($prodi == '0205'){
+                              $prodi1 = 'Sistem Informasi';
                             }elseif ($prodi == '0306') {
                               $prodi1 = 'Agribisnis';
-
                             }elseif ($prodi == '0307'){
                               $prodi1 = 'Agreokoteknologi';
-
                             }elseif ($prodi == '0309') {
                               $prodi1 = 'Teknik Pertanian';
-
                             }elseif ($prodi == '0308') {
                               $prodi1 = 'Teknologi Hasil Pertanian';
                             }elseif ($prodi == '0101') {
@@ -150,16 +148,14 @@
                             $jumlah = $row['jumlah'];
                             if ($prodi == '0204') {
                               $prodi1 = 'Teknik Informatika';
-
+                            }elseif($prodi == '0205'){
+                              $prodi1 = 'Sistem Informasi';
                             }elseif ($prodi == '0306') {
                               $prodi1 = 'Agribisnis';
-
                             }elseif ($prodi == '0307'){
                               $prodi1 = 'Agreokoteknologi';
-
                             }elseif ($prodi == '0309') {
                               $prodi1 = 'Teknik Pertanian';
-
                             }elseif ($prodi == '0308') {
                               $prodi1 = 'Teknologi Hasil Pertanian';
                             }elseif ($prodi == '0101') {
