@@ -11,7 +11,7 @@
                     plotShadow: false
                  },   
                  title: {
-                    text: 'Menunggu Kerja - Pendidikan Agama Islam '
+                    text: 'Menunggu Kerja - Teknik Informatika'
                  },
                  tooltip: {
                     formatter: function() {
@@ -39,7 +39,7 @@
        
                     series: [{
                     type: 'pie',
-                    name: 'Pendidikan Agama Islam',
+                    name: 'Teknik Informatika',
                     data: [
               					<?php
                         include "./library/environment.php";
@@ -71,7 +71,7 @@
 	        <ol class="breadcrumb" style="margin-left:90px">
 	          <li><a href="/">Home</a></li>
 	          <li><a href="<?php print $config['base_url'] ?>responden"">Responden</a></li>
-	          <li class="active">Pendidikan Agama Islam</li>
+	          <li class="active">Teknik Informatika</li>
 	        </ol>
 	      </div>
 	    </div>
@@ -84,7 +84,7 @@
 			<div class="col-md-6">
 				<div class="panel panel-default" id="panduan">
 					<div class="panel-heading unwaha-padding" style="color:#fff">
-						<h3 class="panel-title" style="text-align:center"><i class="fa fa-bar-chart"></i> Pendidikan Agama Islam</h3>
+						<h3 class="panel-title" style="text-align:center"><i class="fa fa-bar-chart"></i> Teknik Informatika</h3>
 					</div>
 					<div class="panel-body">
 						<div id="chart-pie">
