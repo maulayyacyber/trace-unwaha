@@ -11,7 +11,7 @@
                     plotShadow: false
                  },   
                  title: {
-                    text: 'Data Alumni - Pendidikan Agama Islam '
+                    text: 'Menunggu Kerja - Pendidikan Agama Islam '
                  },
                  tooltip: {
                     formatter: function() {
@@ -38,52 +38,21 @@
                  },
        
                     series: [{
-                    type: 'column',
+                    type: 'pie',
                     name: 'Pendidikan Agama Islam',
                     data: [
               					<?php
                         include "./library/environment.php";
                         include "./library/database.php";
 
-                        $query = mysqli_query($connect,"SELECT prodi, count(*)  as jumlah FROM tbl_trace WHERE prodi ='0204' group by prodi");
+                        $query = mysqli_query($connect,"SELECT menunggu_kerja, count(*)  as jumlah FROM tbl_trace WHERE prodi='0204'  group by menunggu_kerja");
                      
                         while ($row = mysqli_fetch_array($query)) {
-                            $prodi  = $row['prodi'];
+                            $nunggu  = $row['menunggu_kerja'];
                             $jumlah = $row['jumlah'];
-                            if ($prodi == '0204') {
-                              $prodi1 = 'Teknik Informatika';
-                            }elseif($prodi == '0205'){
-                              $prodi1 = 'Sistem Informasi';
-                            }elseif ($prodi == '0306') {
-                              $prodi1 = 'Agribisnis';
-                            }elseif ($prodi == '0307'){
-                              $prodi1 = 'Agreokoteknologi';
-                            }elseif ($prodi == '0309') {
-                              $prodi1 = 'Teknik Pertanian';
-                            }elseif ($prodi == '0308') {
-                              $prodi1 = 'Teknologi Hasil Pertanian';
-                            }elseif ($prodi == '0101') {
-                              $prodi1 = 'Pendidikan Agama Islam';
-                            }elseif ($prodi == '0102') {
-                              $prodi1 = 'Pendidikan Bahasa Arba';
-                            }elseif ($prodi == '0103') {
-                              $prodi1 = 'Ekonomi Syariah';
-                            }elseif ($prodi == '0410') {
-                              $prodi1 = 'Pendidikan Biologi';
-                            }elseif ($prodi == '0411') {
-                              $prodi1 = 'Pendidikan Fisika';
-                            }elseif ($prodi == '0412') {
-                              $prodi1 = 'Pendidikan Matematika';
-                            }elseif ($prodi == '0413') {
-                              $prodi1 = 'Pendidikan Bahasa Inggris';
-                            }elseif ($prodi == '0514') {
-                              $prodi1 = 'Manajemen';
-                            }else{
-                              $prodi1 = 'prodi not found';
-                            }
                            
                             ?>
-                            ['<?php echo $prodi1 ?>', <?php echo $jumlah; ?> ],
+                            ['<?php echo $nunggu ?>', <?php echo $jumlah; ?> ],
                             
                         
                         <?php 
@@ -115,7 +84,7 @@
 			<div class="col-md-6">
 				<div class="panel panel-default" id="panduan">
 					<div class="panel-heading unwaha-padding" style="color:#fff">
-						<h3 class="panel-title" style="text-align:center"><i class="fa fa-pie-chart"></i> Fakultas Agama Islam</h3>
+						<h3 class="panel-title" style="text-align:center"><i class="fa fa-bar-chart"></i> Fakultas Agama Islam</h3>
 					</div>
 					<div class="panel-body">
 						<div id="chart-pie">

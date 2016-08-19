@@ -197,44 +197,57 @@ if($_GET['ref'] == "home"){
 		$prodi		= 'Tracer Study UNWAHA';		
 
 	}elseif($_GET['ref'] == "responden-pendidikan-agama-islam"){
-			$title 		= 'Responden Pendidikan Agama Islam';
-        
+			$title 		= 'Responden';
+        	$prodi		= $config['fakultas-agama-islam']['PAI'];
+
         }elseif($_GET['ref'] == "responden-pendidikan-bahasa-arab"){
-        	$title 		= 'Responden Pendidikan Bahasa Arab';
+        	$title 		= 'Responden';
+        	$prodi		= $config['fakultas-agama-islam']['PBA'];
 
         }elseif($_GET['ref'] == "responden-ekonomi-syariah"){
         	$title 		= 'Responden Ekonomi Syariah';
-        
+        	$prodi		= $config['fakultas-agama-islam']['ES'];
+
         }elseif($_GET['ref'] == "responden-sistem-informasi"){
-        	$title 		= 'Responden Sistem Informasi';
-        
+        	$title 		= 'Responden';
+        	$prodi		= $config['fakultas-teknologi-informasi']['SI'];	
+
         }elseif($_GET['ref'] == "responden-teknik-informatika"){
- 			$title		= 'Responden Teknik Informasi';
-        
+ 			$title		= 'Responden';
+        	$prodi		= $config['fakultas-teknologi-informasi']['TI'];
+
         }elseif($_GET['ref'] == "responden-agribisnis"){
-            $title		= 'Responden Agribisnis';
-        
+            $title		= 'Responden';
+        	$prodi		= $config['fakultas-pertanian']['agbisnis'];
+
         }elseif($_GET['ref'] == "responden-agreokoteknologi"){
-            $title		= 'Responden Agroekoteknologi';
-        
+            $title		= 'Responden';
+        	$prodi		= $config['fakultas-pertanian']['agteknologi'];
+
         }elseif($_GET['ref'] == "responden-teknik-pertanian"){
-            $title		= 'Responden Teknik Pertanian';
-        
+            $title		= 'Responden';
+        	$prodi		= $config['fakultas-pertanian']['TP'];
+
         }elseif($_GET['ref'] == "responden-pendidikan-biologi"){
-            $title		= 'Responden Pendidikan Biologi';
-        
+            $title		= 'Responden';
+        	$prodi		= $config['fakultas-ilmu-pendidikan']['PB'];
+
         }elseif($_GET['ref'] == "responden-pendidikan-fisika"){
-            $title		= 'Responden Pendidikan Fisika';
-        
+            $title		= 'Responden';
+        	$prodi		= $config['fakultas-ilmu-pendidikan']['PF'];
+
         }elseif($_GET['ref'] == "responden-pendidikan-matematika"){
-            $title 		= 'Responden Pendidikan Matematika';
-        
+            $title 		= 'Responden';
+        	$prodi		= $config['fakultas-ilmu-pendidikan']['PM'];
+
         }elseif($_GET['ref'] == "responden-pendidikan-bahasa-inggris"){
-            $title 		= 'Responden Pendidikan Bahsa Ingrris';
-        
+            $title 		= 'Responden';
+        	$prodi		= $config['fakultas-ilmu-pendidikan']['PBI'];
+
         }elseif($_GET['ref'] == "responden-manajemen"){
-            $title 		= 'Responden Manajemen';
-        
+            $title 		= 'Responden';
+        	$prodi		= $config['fakultas-ekonomi']['manajemen'];	
+        	
         }else{
 		
 		header("location:home");
