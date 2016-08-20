@@ -32,18 +32,51 @@ if(!empty($_SESSION['nama']) AND !empty($_SESSION['nim'])){
 
 			  <div class="form-group">
 			    <label for="bidangusaha">
-			    	<span style="border-left: 3px solid #66AE53;"> &nbsp; Menurut pendapat saudara, kemampuan lulusan Jurusan Sistem Informasi STMIK Bahrul ’Ulum Jombang  yang dirasa belum memadai saat pertama kali bekerja adalah</span>
+			    	<span style="border-left: 3px solid #66AE53;"> &nbsp; Menurut pendapat saudara, kemampuan lulusan Jurusan Sistem Informasi UNWAHA Jombang  yang dirasa belum memadai saat pertama kali bekerja adalah</span>
 			    </label>
-				<div class="radio">
-				  <label><input type="radio" name="kemampuan" value="Kemampuan keahlian" onchange="lulus()" id="kemampuankeahlian">Kemampuan keahlian</label>
-				  <label><input type="radio" name="kemampuan" value="Kemampuan terapan/lapangan" onchange="lulus()" id="kemampuanterapan">Kemampuan terapan/lapangan</label>
-				  <label><input type="radio" name="kemampuan" value="Kemampuan komunikasi" onchange="lulus()" id="kemampuankomunikasi">Kemampuan komunikasi</label>
-				  <label><input type="radio" name="kemampuan" value="Kemampuan komunikasi" onchange="lulus()" id="sikap"> Sikap/perilaku, mohon disebutkan misalnya...</label>
-				  <p style="margin-top: inherit">				  				  
-				  <textarea name="kemampuan" class="form-control" rows="2" id="lulusan" placeholder="" autocomplete="off" disabled></textarea>
-				  <p>				  
 
-				</div>
+			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Kemampuan Keahlian</span>
+					<br>
+					<select name="kemampuan_keahlian" class="form-control" style="margin-left:15px;margin-top:5px;margin-bottom:5px;width:30%">
+					  <option value="SB">SB</option>
+					  <option value="B">B</option>
+					  <option value="C">C</option>
+					</select>
+			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Kemampuan Kerja Sama</span>
+					<br>
+					<select name="kemampuan_kerjasama" class="form-control" style="margin-left:15px;margin-top:5px;margin-bottom:5px;width:30%">
+					  <option value="SB">SB</option>
+					  <option value="B">B</option>
+					  <option value="C">C</option>
+					</select>
+			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Kemampuan Komunikasi</span>
+					<br>
+					<select name="kemampuan_komunikasi" class="form-control" style="margin-left:15px;margin-top:5px;margin-bottom:5px;width:30%">
+					  <option value="SB">SB</option>
+					  <option value="B">B</option>
+					  <option value="C">C</option>
+					</select>
+			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Moral/Perilaku</span>
+					<br>
+					<select name="kemampuan_moral" class="form-control" style="margin-left:15px;margin-top:5px;margin-bottom:5px;width:30%">
+					  <option value="SB">SB</option>
+					  <option value="B">B</option>
+					  <option value="C">C</option>
+					</select>															
+			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Bahasa Inggris</span>
+					<br>
+					<select name="kemampuan_bing" class="form-control" style="margin-left:15px;margin-top:5px;margin-bottom:5px;width:30%">
+					  <option value="SB">SB</option>
+					  <option value="B">B</option>
+					  <option value="C">C</option>
+					</select>	
+			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Pengembangan Diri</span>
+					<br>
+					<select name="pengembangan_diri" class="form-control" style="margin-left:15px;margin-top:5px;margin-bottom:5px;width:30%">
+					  <option  value="SB">SB</option>
+					  <option  value="B">B</option>
+					  <option  value="C">C</option>
+					</select>
 			  </div>
 
 			  <div class="form-group">
