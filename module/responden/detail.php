@@ -348,6 +348,26 @@
           <div class="panel-body">
             <div id="chart-pie">
             </div>
+            <div id="jumlah-total">
+            <?php
+              include "./library/environment.php";
+              include "./library/database.php";
+
+              $query = mysqli_query($connect,"SELECT menunggu_kerja, count(*)  as jumlah FROM tbl_trace WHERE prodi='$kode_prodi'  group by menunggu_kerja");
+                     
+              while ($row = mysqli_fetch_array($query)) {
+                $nunggu  = $row['menunggu_kerja'];
+                $jumlah = $row['jumlah'];  
+
+                echo '<ul class="list-group">
+                        <li class="list-group-item">
+                          <span class="badge">'.$jumlah.'</span>
+                          Menunggu Kerja : <b>'.$nunggu.'</b>
+                        </li>
+                      </ul>';  
+              }      
+            ?>            
+            </div>
           </div>
         </div>      
 			</div>
@@ -359,6 +379,26 @@
 					<div class="panel-body">
 						<div id="bentuk-perusahaan">
 						</div>
+            <div id="jumlah-total">
+              <?php
+                include "./library/environment.php";
+                include "./library/database.php";
+
+                $query = mysqli_query($connect,"SELECT bentuk_perusahaan, count(*)  as jumlah FROM tbl_trace WHERE prodi='$kode_prodi'  group by bentuk_perusahaan");
+                     
+                while ($row = mysqli_fetch_array($query)) {
+                  $nunggu  = $row['bentuk_perusahaan'];
+                  $jumlah = $row['jumlah'];
+
+                  echo '<ul class="list-group">
+                          <li class="list-group-item">
+                            <span class="badge">'.$jumlah.'</span>
+                            Bentuk Perusahaan : <b>'.$nunggu.'</b>
+                          </li>
+                        </ul>';
+                }             
+              ?>              
+            </div>
 					</div>
 				</div>			
 			</div>
