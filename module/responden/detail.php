@@ -349,6 +349,12 @@
             <div id="chart-pie">
             </div>
             <div id="jumlah-total">
+              <h4 class="panel-title" style="margin-bottom:5px">
+                  <button class="btn btn-default" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-menunggu">
+                    <i class="fa fa-bars"></i>  Detail Data
+                  </button>
+              </h4>
+             <div id="collapse-menunggu" class="panel-collapse collapse">                       
             <?php
               include "./library/environment.php";
               include "./library/database.php";
@@ -366,7 +372,8 @@
                         </li>
                       </ul>';  
               }      
-            ?>            
+            ?>    
+            </div>        
             </div>
           </div>
         </div>      
@@ -380,6 +387,12 @@
 						<div id="bentuk-perusahaan">
 						</div>
             <div id="jumlah-total">
+              <h4 class="panel-title" style="margin-bottom:5px">
+                  <button class="btn btn-default" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-bentuk">
+                    <i class="fa fa-bars"></i>  Detail Data
+                  </button>
+              </h4> 
+              <div id="collapse-bentuk" class="panel-collapse collapse">           
               <?php
                 include "./library/environment.php";
                 include "./library/database.php";
@@ -399,6 +412,7 @@
                 }             
               ?>              
             </div>
+            </div>
 					</div>
 				</div>			
 			</div>
@@ -414,6 +428,12 @@
             <div id="bidang-pekerjaan-ti">
             </div>
             <div id="jumlah-total">
+              <h4 class="panel-title" style="margin-bottom:5px">
+                  <button class="btn btn-default" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-bidang-ti">
+                    <i class="fa fa-bars"></i>  Detail Data
+                  </button>
+              </h4> 
+              <div id="collapse-bidang-ti" class="panel-collapse collapse">            
               <?php
                 include "./library/environment.php";
                 include "./library/database.php";
@@ -432,7 +452,8 @@
                         </ul>';
                 }             
               ?>              
-            </div>            
+            </div>       
+            </div>     
           </div>
         </div>      
       </div>
@@ -445,6 +466,12 @@
             <div id="bidang-pekerjaan-non-ti">
             </div>
             <div id="jumlah-total">
+              <h4 class="panel-title" style="margin-bottom:5px">
+                  <button class="btn btn-default" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-bidang-non-ti">
+                    <i class="fa fa-bars"></i>  Detail Data
+                  </button>
+              </h4> 
+              <div id="collapse-bidang-non-ti" class="panel-collapse collapse">            
               <?php
                 include "./library/environment.php";
                 include "./library/database.php";
@@ -463,7 +490,8 @@
                         </ul>';
                 }             
               ?>              
-            </div>            
+            </div> 
+            </div>           
           </div>
         </div>      
       </div>
@@ -481,6 +509,12 @@
             <div id="income">
             </div>
             <div id="jumlah-total">
+              <h4 class="panel-title" style="margin-bottom:5px">
+                  <button class="btn btn-default" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-income">
+                    <i class="fa fa-bars"></i>  Detail Data
+                  </button>
+              </h4> 
+              <div id="collapse-income" class="panel-collapse collapse">            
               <?php
                 include "./library/environment.php";
                 include "./library/database.php";
@@ -499,7 +533,8 @@
                         </ul>';
                 }             
               ?>              
-            </div>            
+            </div>    
+            </div>        
           </div>
         </div>      
       </div>
