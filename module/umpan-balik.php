@@ -41,6 +41,7 @@ if(!empty($_SESSION['nama']) AND !empty($_SESSION['nim'])){
 					  <option value="SB">SB</option>
 					  <option value="B">B</option>
 					  <option value="C">C</option>
+					  <option value="K">K</option>
 					</select>
 			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Kemampuan Kerja Sama</span>
 					<br>
@@ -48,6 +49,7 @@ if(!empty($_SESSION['nama']) AND !empty($_SESSION['nim'])){
 					  <option value="SB">SB</option>
 					  <option value="B">B</option>
 					  <option value="C">C</option>
+					  <option value="K">K</option>
 					</select>
 			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Kemampuan Komunikasi</span>
 					<br>
@@ -55,6 +57,7 @@ if(!empty($_SESSION['nama']) AND !empty($_SESSION['nim'])){
 					  <option value="SB">SB</option>
 					  <option value="B">B</option>
 					  <option value="C">C</option>
+					  <option value="K">K</option>
 					</select>
 			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Moral/Perilaku</span>
 					<br>
@@ -62,6 +65,7 @@ if(!empty($_SESSION['nama']) AND !empty($_SESSION['nim'])){
 					  <option value="SB">SB</option>
 					  <option value="B">B</option>
 					  <option value="C">C</option>
+					  <option value="K">K</option>
 					</select>															
 			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Bahasa Inggris</span>
 					<br>
@@ -69,6 +73,7 @@ if(!empty($_SESSION['nama']) AND !empty($_SESSION['nim'])){
 					  <option value="SB">SB</option>
 					  <option value="B">B</option>
 					  <option value="C">C</option>
+					  <option value="K">K</option>
 					</select>	
 			    	<span style="margin-left:15px;border-left: 3px solid #66AE53;"> &nbsp; Pengembangan Diri</span>
 					<br>
@@ -76,6 +81,7 @@ if(!empty($_SESSION['nama']) AND !empty($_SESSION['nim'])){
 					  <option  value="SB">SB</option>
 					  <option  value="B">B</option>
 					  <option  value="C">C</option>
+					  <option value="K">K</option>
 					</select>
 			  </div>
 
