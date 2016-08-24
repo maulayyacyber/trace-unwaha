@@ -199,54 +199,67 @@ if($_GET['ref'] == "home"){
 	}elseif($_GET['ref'] == "responden-pendidikan-agama-islam"){
 			$title 		= 'Responden';
         	$prodi		= $config['fakultas-agama-islam']['PAI'];
+        	$kode_prodi = '0101';
 
         }elseif($_GET['ref'] == "responden-pendidikan-bahasa-arab"){
         	$title 		= 'Responden';
         	$prodi		= $config['fakultas-agama-islam']['PBA'];
+        	$kode_prodi = '0102';
 
         }elseif($_GET['ref'] == "responden-ekonomi-syariah"){
         	$title 		= 'Responden Ekonomi Syariah';
         	$prodi		= $config['fakultas-agama-islam']['ES'];
+        	$kode_prodi = '0103';
 
         }elseif($_GET['ref'] == "responden-sistem-informasi"){
         	$title 		= 'Responden';
-        	$prodi		= $config['fakultas-teknologi-informasi']['SI'];	
+        	$prodi		= $config['fakultas-teknologi-informasi']['SI'];
+        	$kode_prodi = '0205';	
 
         }elseif($_GET['ref'] == "responden-teknik-informatika"){
  			$title		= 'Responden';
         	$prodi		= $config['fakultas-teknologi-informasi']['TI'];
+        	$kode_prodi = '0204';
 
         }elseif($_GET['ref'] == "responden-agribisnis"){
             $title		= 'Responden';
         	$prodi		= $config['fakultas-pertanian']['agbisnis'];
+        	$kode_prodi = '0306';
 
         }elseif($_GET['ref'] == "responden-agreokoteknologi"){
             $title		= 'Responden';
         	$prodi		= $config['fakultas-pertanian']['agteknologi'];
+        	$kode_prodi = '0307';
 
         }elseif($_GET['ref'] == "responden-teknik-pertanian"){
             $title		= 'Responden';
         	$prodi		= $config['fakultas-pertanian']['TP'];
+        	$kode_prodi = '0309';
 
         }elseif($_GET['ref'] == "responden-pendidikan-biologi"){
             $title		= 'Responden';
         	$prodi		= $config['fakultas-ilmu-pendidikan']['PB'];
+        	$kode_prodi = '0410';
 
         }elseif($_GET['ref'] == "responden-pendidikan-fisika"){
             $title		= 'Responden';
         	$prodi		= $config['fakultas-ilmu-pendidikan']['PF'];
+        	$kode_prodi = '0411';
 
         }elseif($_GET['ref'] == "responden-pendidikan-matematika"){
             $title 		= 'Responden';
         	$prodi		= $config['fakultas-ilmu-pendidikan']['PM'];
+        	$kode_prodi = '0412';
 
         }elseif($_GET['ref'] == "responden-pendidikan-bahasa-inggris"){
             $title 		= 'Responden';
         	$prodi		= $config['fakultas-ilmu-pendidikan']['PBI'];
+        	$kode_prodi = '0413';
 
         }elseif($_GET['ref'] == "responden-manajemen"){
             $title 		= 'Responden';
         	$prodi		= $config['fakultas-ekonomi']['manajemen'];	
+        	$kode_prodi = '0514';
         	
         }else{
 		

@@ -66,43 +66,43 @@
             require "module/responden.php";
 
         }elseif($_GET['ref'] == "responden-pendidikan-agama-islam"){
-            require "module/responden/pai.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-pendidikan-bahasa-arab"){
-            require "module/responden/pba.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-ekonomi-syariah"){
-            require "module/responden/es.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-sistem-informasi"){
-            require "module/responden/si.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-teknik-informatika"){
-            require "module/responden/ti.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-agribisnis"){
-            require "module/responden/agribisnis.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-agreokoteknologi"){
-            require "module/responden/agroekoteknologi.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-teknik-pertanian"){
-            require "module/responden/tp.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-pendidikan-biologi"){
-            require "module/responden/pb.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-pendidikan-fisika"){
-            require "module/responden/pf.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-pendidikan-matematika"){
-            require "module/responden/pm.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-pendidikan-bahasa-inggris"){
-            require "module/responden/pbi.php";
+            require "module/responden/detail.php";
         
         }elseif($_GET['ref'] == "responden-manajemen"){
-            require "module/responden/manajemen.php";
+            require "module/responden/detail.php";
         
         }else{
             require "module/404.php";
