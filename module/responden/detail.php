@@ -359,7 +359,7 @@
                 $nunggu  = $row['menunggu_kerja'];
                 $jumlah = $row['jumlah'];  
 
-                echo '<ul class="list-group">
+                echo '<ul class="list-group" style="padding-top:5px">
                         <li class="list-group-item">
                           <span class="badge">'.$jumlah.'</span>
                           Menunggu Kerja : <b>'.$nunggu.'</b>
@@ -390,7 +390,7 @@
                   $nunggu  = $row['bentuk_perusahaan'];
                   $jumlah = $row['jumlah'];
 
-                  echo '<ul class="list-group">
+                  echo '<ul class="list-group" style="padding-top:5px">
                           <li class="list-group-item">
                             <span class="badge">'.$jumlah.'</span>
                             Bentuk Perusahaan : <b>'.$nunggu.'</b>
@@ -413,6 +413,26 @@
           <div class="panel-body">
             <div id="bidang-pekerjaan-ti">
             </div>
+            <div id="jumlah-total">
+              <?php
+                include "./library/environment.php";
+                include "./library/database.php";
+
+                $query = mysqli_query($connect,"SELECT bidang_pekerjaanIT, count(*)  as jumlah FROM tbl_trace WHERE prodi='$kode_prodi'  group by bidang_pekerjaanIT");
+                     
+                while ($row = mysqli_fetch_array($query)) {
+                  $nunggu  = $row['bidang_pekerjaanIT'];
+                  $jumlah = $row['jumlah'];
+
+                  echo '<ul class="list-group" style="padding-top:5px">
+                          <li class="list-group-item">
+                            <span class="badge">'.$jumlah.'</span>
+                            Bidang Pekerjaan IT : <b>'.$nunggu.'</b>
+                          </li>
+                        </ul>';
+                }             
+              ?>              
+            </div>            
           </div>
         </div>      
       </div>
@@ -424,6 +444,26 @@
           <div class="panel-body">
             <div id="bidang-pekerjaan-non-ti">
             </div>
+            <div id="jumlah-total">
+              <?php
+                include "./library/environment.php";
+                include "./library/database.php";
+
+                $query = mysqli_query($connect,"SELECT bidang_pekerjaannonIT, count(*)  as jumlah FROM tbl_trace WHERE prodi='$kode_prodi'  group by bidang_pekerjaannonIT");
+                     
+                while ($row = mysqli_fetch_array($query)) {
+                  $nunggu  = $row['bidang_pekerjaannonIT'];
+                  $jumlah = $row['jumlah'];
+
+                  echo '<ul class="list-group" style="padding-top:5px">
+                          <li class="list-group-item">
+                            <span class="badge">'.$jumlah.'</span>
+                            Bidang Pekerjaan non IT : <b>'.$nunggu.'</b>
+                          </li>
+                        </ul>';
+                }             
+              ?>              
+            </div>            
           </div>
         </div>      
       </div>
@@ -440,6 +480,26 @@
           <div class="panel-body">
             <div id="income">
             </div>
+            <div id="jumlah-total">
+              <?php
+                include "./library/environment.php";
+                include "./library/database.php";
+
+                $query = mysqli_query($connect,"SELECT income_pertama, count(*)  as jumlah FROM tbl_trace WHERE prodi='$kode_prodi'  group by income_pertama");
+                     
+                while ($row = mysqli_fetch_array($query)) {
+                  $nunggu  = $row['income_pertama'];
+                  $jumlah = $row['jumlah'];
+
+                  echo '<ul class="list-group" style="padding-top:5px">
+                          <li class="list-group-item">
+                            <span class="badge">'.$jumlah.'</span>
+                            Income Pertama : <b>'.$nunggu.'</b>
+                          </li>
+                        </ul>';
+                }             
+              ?>              
+            </div>            
           </div>
         </div>      
       </div>
