@@ -65,7 +65,7 @@
 			    <label for="jenisusaha">
 			    	<span style="border-left: 3px solid #66AE53;"> &nbsp; Bila Jawaban No. 4 Teknologi Informasi, jenis perusahaannya adalah<span style="color:red">*</span> </span>
 			    </label><br>
-				<label class="radio-inline"><input type="radio" name="perusbidangIT" value="Kontraktor bidang TI" onchange='perusahaan_IT()' id="kontraktor" checked>Kontraktor bidang TI</label>
+				<label class="radio-inline"><input type="radio" name="perusbidangIT" value="Kontraktor bidang TI" onchange='perusahaan_IT()' id="kontraktor">Kontraktor bidang TI</label>
 
 				<label class="radio-inline"><input type="radio" name="perusbidangIT" value="Konsultan TI" onchange='perusahaan_IT()' id="konsultan" >Konsultan TI</label>
 
@@ -86,7 +86,7 @@
 			    <label for="jenisusaha">
 			    	<span style="border-left: 3px solid #66AE53;"> &nbsp; Bila jawaban No. 4  Non TI, jenis perusahaan <span style="color:red">*</span> </span>
 			    </label><br>
-				<label class="radio-inline"><input type="radio" name="perusbidangnonIT" value="BANK" onchange='perusahaan_nonIT()' id="bank" checked>BANK</label>
+				<label class="radio-inline"><input type="radio" name="perusbidangnonIT" value="BANK" onchange='perusahaan_nonIT()' id="bank">BANK</label>
 
 				<label class="radio-inline"><input type="radio" name="perusbidangnonIT" value="Perusahaan Manufaktur" onchange='perusahaan_nonIT()' id="perusmanufaktur" >Perusahaan Manufaktur</label>
 
